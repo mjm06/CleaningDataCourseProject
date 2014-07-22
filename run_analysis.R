@@ -7,11 +7,15 @@
 #5. Creates a second, independent tidy data set with the average of each variable
 #   for each activity and each subject.
 
+#Note that this script assumes that all test and train datafiles it reads in are housed in the test
+#and train folders in the same directory as the script; the features and activities text files
+#are assumed to be housed in the same directory as the script.
+
 require(plyr)
 require(reshape2)
 
 #Read in the test datasets (X_test and y_test).X_test is the test set;
-#y_test contains the test labels.Get the subject names that are in 
+#y_test contains the test labels.Get the subject names, which are in subject_test.txt.
 x.test<-read.table("./test/X_test.txt", sep="")
 y.test<-read.table("./test/y_test.txt", sep="")
 subject.test<-read.table("./test/subject_test.txt", sep="")

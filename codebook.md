@@ -1,5 +1,5 @@
 ###Codebook for `tidy_data.txt`
-<b> Purpose: describes the structure and variables of the file `tidy_data.txt`.</b>
+This markdown file describes the structure and variables of the file `tidy_data.txt`, a tidy dataset output by the R script `run_analysis.R` housed in the same <a href="https://github.com/mjm06/CleaningDataCourseProject"> Github repository </a> as this Codebook.
 
 ####**File Structure**
 

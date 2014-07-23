@@ -41,7 +41,7 @@ Note that, in **X_test.txt** and **x_train.txt**, the Subject ID, Activity Type 
 
 * Before the columns of `all.data` that contain means or standard deviations can be extracted, descriptive column names are added to `all.data` using `colnames()`. Column 1 in `all.data` is the Subject ID; Column 2 is the Activity Type (an integer code); while Columns 3-563 correspond to the 561 variables measured. Descriptive names of these 561 variables were provided in the second column of the features.txt file of the original dataset. 
 
-* The script then uses `grep` to identify all columns in `all.data` that have "mean" or "std" anywhere in their column names. The result is a dataframe (`extracted.data`) that contains only measurements of the mean or standard deviation for each measurement.
+* The script then uses `grep` to identify all columns in `all.data` that have "mean" or "std" anywhere in their column names. **The result is a dataframe (`extracted.data`) that contains only measurements of the mean or standard deviation for each measurement.**
 
 
 **Step 3: Uses descriptive activity names to name the activities in the data set.**
@@ -59,6 +59,8 @@ Descriptive variable names were added to the dataset as a part of Step 2 above. 
 * "()" is deleted from all colnames where it appears
 * "std" and "mean" are replaced with "Std" and "Mean", so that all colnames use CamelCase
 * the "BodyBody" typo is replaced with "Body" where it appears.
+
+**The result of this step is that the extracted dataframe `ext.data.active` now has descriptive, easy to read variable names.**
 
 **Step 5: Creates a second, independent tidy dataset with the average of each variable, for each activity, for each subject.**
 This step was accomplished using the `reshape2` package; specifically, the `melt` and `dcast` functions. 

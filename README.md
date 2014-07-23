@@ -36,14 +36,14 @@ Note that, in **X_test.txt** and **x_train.txt**, the Subject ID, Activity Type 
 * Then, `cbind` is used to merge `subject.test`, `y.test`, and `x.test` into a single dataframe (`all.test`). Therefore, the first two columns of `all.test` contain the Subject ID and the Activity Type.
 * Similarly, `cbind` is used to merge `subject.train`, `y.train`, and `x.train` into a single dataframe (`all.train`). Therefore, the first two columns of `all.train` contain the Subject ID and the Activity Type.
 * Finally, `all.test` and `all.train` are merged using `rbind`. **The result is a single dataset (called `all.data` in the script) that contains the merged training and test sets**. The `all.data` dataframe has 10299 rows and 563 columns.
-
+---
 **Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.**
 
 * Before the columns of `all.data` that contain means or standard deviations can be extracted, descriptive column names are added to `all.data` using `colnames()`. Column 1 in `all.data` is the Subject ID; Column 2 is the Activity Type (an integer code); while Columns 3-563 correspond to the 561 variables measured. Descriptive names of these 561 variables were provided in the second column of the features.txt file of the original dataset. 
 
 * The script then uses `grep` to identify all columns in `all.data` that have "mean" or "std" anywhere in their column names. **The result is a dataframe (`extracted.data`) that contains only measurements of the mean or standard deviation for each measurement.**
 
-
+---
 **Step 3: Uses descriptive activity names to name the activities in the data set.**
 
 * First, column names are assigned to the `activities` dataframe ("Activities", and "ActivityName").
@@ -51,7 +51,7 @@ The integer values that comprise `extracted.data$Activity` (which were originall
 
 * The `activities` and `extracted.data` dataframes are merged, using the "Activity" column in each as the unique key. (Note that `all.y=FALSE`.)
 **The result is a new dataframe (`ext.data.active`) that contains all 561 variables measured for each activity and subject, with descriptive activity names used to name the activities.**
-
+---
 **Step 4: Appropriately labels the data set (`ext.data.active`) with descriptive variable names.**
 Descriptive variable names were added to the dataset as a part of Step 2 above. However, these names -- which were provided in the original data in the second column of features.text -- are improved in this step using gsub:
 
@@ -61,7 +61,7 @@ Descriptive variable names were added to the dataset as a part of Step 2 above. 
 * the "BodyBody" typo is replaced with "Body" where it appears.
 
 **The result of this step is that the extracted dataframe `ext.data.active` now has descriptive, easy to read variable names.**
-
+---
 **Step 5: Creates a second, independent tidy dataset with the average of each variable, for each activity, for each subject.**
 This step was accomplished using the `reshape2` package; specifically, the `melt` and `dcast` functions. 
 
@@ -69,5 +69,5 @@ This step was accomplished using the `reshape2` package; specifically, the `melt
 * Then, the `tidy_melt` dataframe is cast as a wide dataframe (`tidy_cast`), with the mean calculated for each activity and each subject. 
 * Finally, `tidy_cast` was output as a tab-delimited text file "tidy_data.txt" using `write.table`. **Therefore, tidy_data.txt is defined as the "tidy dataset" for the purposes of this Course Project.** 
 
-
+---
 [1] Citation for data source:  Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012

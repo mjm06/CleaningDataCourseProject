@@ -74,7 +74,7 @@ This step was accomplished using the `reshape2` package; specifically, the `melt
 
 * First, the `ext.data.active` dataset created in Step 2, and edited with descriptive labels in Steps 3 and 4, is melted to yield a long dataframe (`tidy_melt`). 
 * Then, the `tidy_melt` dataframe is cast as a wide dataframe (`tidy_cast`), with the mean calculated for each activity and each subject. 
-* Finally, `tidy_cast` was output as a tab-delimited text file "tidy_data.txt" using `write.table`. **Therefore, tidy_data.txt is defined as the "tidy dataset" for the purposes of this Course Project.** 
+* Finally, `tidy_cast` was output as a tab-delimited text file "tidy_data.txt" using `write.table`. **Therefore, tidy_data.txt is defined as the "tidy dataset" for the purposes of this Course Project.** For further details about the structure of tidy_data.txt, and the variables in this dataset, see the <a href="https://github.com/mjm06/CleaningDataCourseProject/edit/master/Codebook.md"> Codebook</a> in the same repository as this README.
 
 ---
 

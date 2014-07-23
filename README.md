@@ -36,7 +36,7 @@ Note that, in **X_test.txt** and **x_train.txt**, the Subject ID, Activity Type 
 * Then, `cbind` is used to merge `subject.test`, `y.test`, and `x.test` into a single dataframe (`all.test`). Therefore, the first two columns of `all.test` contain the Subject ID and the Activity Type.
 * Similarly, `cbind` is used to merge `subject.train`, `y.train`, and `x.train` into a single dataframe (`all.train`). Therefore, the first two columns of `all.train` contain the Subject ID and the Activity Type.
 * Finally, `all.test` and `all.train` are merged using `rbind`. **The result is a single dataset (called `all.data` in the script) that contains the merged training and test sets**. The `all.data` dataframe has 10299 rows and 563 columns.
-* 
+
 ---
 
 **Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.**
@@ -54,6 +54,7 @@ The integer values that comprise `extracted.data$Activity` (which were originall
 
 * The `activities` and `extracted.data` dataframes are merged, using the "Activity" column in each as the unique key. (Note that `all.y=FALSE`.)
 **The result is a new dataframe (`ext.data.active`) that contains all 561 variables measured for each activity and subject, with descriptive activity names used to name the activities.**
+
 ---
 
 **Step 4: Appropriately labels the data set (`ext.data.active`) with descriptive variable names.**

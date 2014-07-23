@@ -28,18 +28,20 @@ Therefore, there are **180 rows** in the dataset:  30 subjects x 6 activities = 
     
 "Subject" - an integer between 1 and 30 that corresponds to the study subject's ID.
 
-The following 79 variables are unitless, because they represent the mean or standard deviation of each variable, calculated by activity and subject, and the measurements of these variables were normalized to [-1,1] before the means and standard deviations were calculated. In addition:
+The remaining 79 variables are unitless, because they represent the mean or standard deviation of each variable, calculated by activity and subject, and the measurements of these variables were normalized to [-1,1] before the means and standard deviations were calculated. 
 
-*Variables beginning with a "t" are means or standard deviations of the variables that are time domain signals (captured at a constant rate of 50 Hz). 
-*Variables beginning with "f" are means or standard deviations of frequency domain signals.
-*Variables with "Mag" in the name represent the mean or standard deviation of the magnitude (calculated using the Euclidean norm, and denoted by "Mag" in the variable name) of the three-dimensional signals (XYZ); specifically: tBodyAccMagMean, tGravityAccMagMean, tBodyAccJerkMagMean, tBodyGyroMagMean, and tBodyGyroJerkMagMean.
-*The X, Y, or Z suffix on the variable names denotes whether the tri-axial signal recorded was in the X, Y, or Z direction.
-*Variables with "Jerk" in the name are means of variables produced by taking the derivative of the body linear acceleration or the angular velocity; specifically: tBodyAccJerkMeanX, tBodyAccJerkMeanY, tBodyAccJerkMeanZ, tBodyGyroJerkMeanX, tBodyGyroJerkMeanY, and tBodyGyroJerkMeanZ.
-*Note that, in the original dataset, the acceleration signal was separated into body and gravity acceleration signals; therefore, separate means an standard deviations are provided here for body acceleration and gravity acceleration (specifically, tBodyAccMeanX, tBodyAccMeanY, tBodyAccMeanZ, tGravityAccMeanX, tGravityAccMeanY,and tGravityAccMeanZ). 
+The following guidelines illustrate how to decipher the names of these 79 variables:  
 
-A list of all 79 measured variables is provided below:
+* Variables beginning with a "t" are means or standard deviations of the variables that are time domain signals (captured at a constant rate of 50 Hz). 
+* Variables beginning with "f" are means or standard deviations of frequency domain signals.
+* Variables with "Mag" in the name represent the mean or standard deviation of the magnitude (calculated using the Euclidean norm, and denoted by "Mag" in the variable name) of the three-dimensional signals (XYZ); specifically: tBodyAccMagMean, tGravityAccMagMean, tBodyAccJerkMagMean, tBodyGyroMagMean, and tBodyGyroJerkMagMean.
+* The X, Y, or Z suffix on the variable names denotes whether the tri-axial signal recorded was in the X, Y, or Z direction.
+* Variables with "Jerk" in the name are means of variables produced by taking the derivative of the body linear acceleration or the angular velocity; specifically: tBodyAccJerkMeanX, tBodyAccJerkMeanY, tBodyAccJerkMeanZ, tBodyGyroJerkMeanX, tBodyGyroJerkMeanY, and tBodyGyroJerkMeanZ.
+* Note that, in the original dataset, the acceleration signal was separated into body and gravity acceleration signals; therefore, separate means an standard deviations are provided here for body acceleration and gravity acceleration (specifically, tBodyAccMeanX, tBodyAccMeanY, tBodyAccMeanZ, tGravityAccMeanX, tGravityAccMeanY,and tGravityAccMeanZ). 
 
-<ul>
+A list of all 79 measured variables, whose names were assigned using the  is provided below:
+
+<pre>
 fBodyAccJerkMagMean
 fBodyAccJerkMagMeanFreq
 fBodyAccJerkMagStd
@@ -119,4 +121,4 @@ tGravityAccMeanZ
 tGravityAccStdX
 tGravityAccStdY
 tGravityAccStdZ
-</ul>
+</pre>

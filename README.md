@@ -14,7 +14,7 @@ Details of how the script accomplishes each of the five steps are described belo
 ---
 ####Background Information About the Data
 
-The test data and the training data, which are housed in **X_test.txt** and **x_train.txt**, contain measurements triaxial total acceleration, estimated body acceleration, and trixial angular velocity recorded by accelerometers and gyroscopes in the Samsung Galaxy S smartphone, which are recorded as 561 variables.
+The test data and the training data, which are housed in **X_test.txt** and **x_train.txt**, contain measurements of triaxial total acceleration, estimated body acceleration, and trixial angular velocity recorded by accelerometers and gyroscopes in the Samsung Galaxy S smartphone, which are recorded as 561 variables.
 Note that all measurements are unitless because they have been normalized (and bounded to [-1, 1]). 
 
 These variables were measured when 30 subjects, wearing the phones in cases attached to their waists, did six different activities (walking, walking up stairs, walking down stairs, sitting, standing, and laying). Thirty percent of the data from the 30 subjects was assigned to **X_test**, while 70% of the data was assigned to **x_train**. 

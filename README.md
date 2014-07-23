@@ -66,6 +66,7 @@ Descriptive variable names were added to the dataset as a part of Step 2 above. 
 * the "BodyBody" typo is replaced with "Body" where it appears.
 
 **The result of this step is that the extracted dataframe `ext.data.active` now has descriptive, easy to read variable names.**
+
 ---
 
 **Step 5: Creates a second, independent tidy dataset with the average of each variable, for each activity, for each subject.**

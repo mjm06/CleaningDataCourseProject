@@ -1,5 +1,5 @@
 ###Codebook for `tidy_data.txt`
-####*describes the structure and variables of the file `tidy_data.txt`.*
+<b> Purpose: describes the structure and variables of the file `tidy_data.txt`.</b>
 
 ####**File Structure**
 

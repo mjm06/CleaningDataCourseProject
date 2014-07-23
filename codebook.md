@@ -5,7 +5,7 @@
 The file `tidy_data.txt` contains 82 columns and 180 rows. The columns represent 82 variables. 
 Columns 1-3 contain the "Activity", "ActivityName", and "Subject" variables, respectively.
 Columns 4-82 are the 79 variables measured by the accelerometer and gyroscope in Samsung smartphones, when 30 test subjects each completed six activities for multiple replicates. Tidy_data.txt contains the mean value of each variable, by activity and subject, calculated for these replicates.
-(Therefore, there are 180 rows in the dataset:  30 subjects x 6 activities = 180.)
+(Therefore, there are *180 rows* in the dataset:  30 subjects x 6 activities = 180.)
 
 ---
 **Variables**

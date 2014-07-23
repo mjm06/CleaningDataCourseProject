@@ -52,7 +52,7 @@ Note that, in **X_test.txt** and **x_train.txt**, the Subject ID, Activity Type 
 * First, column names are assigned to the `activities` dataframe ("Activities", and "ActivityName").
 The integer values that comprise `extracted.data$Activity` (which were originally housed in y_test.txt and y_train.txt) correspond to integer values in `activities$Activity`. Text descriptions of the activities are given in `activities$ActivityName`.
 
-* The `activities` and `extracted.data` dataframes are merged, using the "Activity" column in each as the unique key. (Note that `all.y=FALSE`.)
+* The `activities` and `extracted.data` dataframes are merged, using the "Activity" column in each as the primary key. (Note that `all.y=FALSE`.)
 **The result is a new dataframe (`ext.data.active`) that contains all 561 variables measured for each activity and subject, with descriptive activity names used to name the activities.**
 
 ---

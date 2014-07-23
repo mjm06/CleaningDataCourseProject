@@ -39,7 +39,7 @@ The following guidelines illustrate how to decipher the names of these 79 variab
 * Variables with "Jerk" in the name are means of variables produced by taking the derivative of the body linear acceleration or the angular velocity; specifically: tBodyAccJerkMeanX, tBodyAccJerkMeanY, tBodyAccJerkMeanZ, tBodyGyroJerkMeanX, tBodyGyroJerkMeanY, and tBodyGyroJerkMeanZ.
 * Note that, in the original dataset, the acceleration signal was separated into body and gravity acceleration signals; therefore, separate means an standard deviations are provided here for body acceleration and gravity acceleration (specifically, tBodyAccMeanX, tBodyAccMeanY, tBodyAccMeanZ, tGravityAccMeanX, tGravityAccMeanY,and tGravityAccMeanZ). 
 
-A list of all 79 measured variables, whose names were assigned using the  is provided below:
+A list of all 79 measured variables, whose names were assigned using the guidelines given above, is provided here:
 
 <pre>
 fBodyAccJerkMagMean

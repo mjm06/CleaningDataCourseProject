@@ -1,7 +1,7 @@
-###Codebook for tidy_data.txt
-####This markdown file describes the structure and variables of the file tidy_data.txt.
+###Codebook for `tidy_data.txt`
+####This markdown file describes the structure and variables of the file `tidy_data.txt`.
 
-**File Structure**
+####**File Structure**
 
 The file **tidy_data.txt** contains 82 columns and 180 rows. 
 Columns 1-3 contain the "Activity", "ActivityName", and "Subject" variables, respectively.
@@ -10,11 +10,11 @@ Therefore, there are **180 rows** in the dataset:  30 subjects x 6 activities = 
 
 
 ---
-**Variables**
+####**Variables**
 
-"Activity" - an integer from 1 to 6 that corresponds to the text description of each activity type in the study (described below in "ActivityName").
+**"Activity"** - an integer from 1 to 6 that corresponds to the text description of each activity type in the study (described below in "ActivityName").
 
-"ActivityName" - a character string (e.g. WALKING) describing the activity type, which corresponds to the integer code used for the Activity column:
+**"ActivityName"** - a character string (e.g. WALKING) describing the activity type, which corresponds to the integer code used for the Activity column:
 
 		
 | Activity  |  Activity Name      |
@@ -26,11 +26,11 @@ Therefore, there are **180 rows** in the dataset:  30 subjects x 6 activities = 
 | 5         |  STANDING           |
 | 6         |  LAYING             |
     
-"Subject" - an integer between 1 and 30 that corresponds to the study subject's ID.
+**"Subject"** - an integer between 1 and 30 that corresponds to the study subject's ID.
 
 The remaining 79 variables are unitless, because they represent the mean or standard deviation of each variable, calculated by activity and subject, and the measurements of these variables were normalized to [-1,1] before the means and standard deviations were calculated. 
 
-The following guidelines illustrate how to decipher the names of these 79 variables:  
+**The following guidelines illustrate how to decipher the names of these 79 variables:**  
 
 * Variables beginning with a "t" are means or standard deviations of the variables that are time domain signals (captured at a constant rate of 50 Hz). 
 * Variables beginning with "f" are means or standard deviations of frequency domain signals.

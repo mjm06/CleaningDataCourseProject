@@ -12,7 +12,7 @@
 Details of how the script accomplishes each of the five steps are described below. But first, some background information about the data is provided.
 
 ---
-####Background Information About the Data
+####Background Information About the Data<sup>[1]</sup>
 
 The test data and the training data, which are housed in **X_test.txt** and **x_train.txt**, contain measurements of triaxial total acceleration, estimated body acceleration, and trixial angular velocity recorded by accelerometers and gyroscopes in the Samsung Galaxy S smartphone, which are recorded as 561 variables.
 Note that all measurements are unitless because they have been normalized (and bounded to [-1, 1]). 
@@ -68,3 +68,4 @@ This step was accomplished using the `reshape2` package; specifically, the `melt
 * Finally, `tidy_cast` was output as a tab-delimited text file "tidy_data.txt" using `write.table`. **Therefore, tidy_data.txt is defined as the "tidy dataset" for the purposes of this Course Project.** 
 
 
+[1] Citation for data source:  Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012

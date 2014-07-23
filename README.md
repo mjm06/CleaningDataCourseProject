@@ -58,11 +58,11 @@ The integer values that comprise `extracted.data$Activity` (which were originall
 ---
 
 **Step 4: Appropriately labels the data set (`ext.data.active`) with descriptive variable names.**
-Descriptive variable names were added to the dataset as a part of Step 2 above. However, these names -- which were provided in the original data in the second column of features.text -- are improved in this step using gsub:
+Descriptive variable names were added to the dataset as a part of Step 2 above. However, these names -- which were provided in the original data in the second column of features.text -- are improved in this step using `gsub()`:
 
-* "-" is deleted from all colnames where it appears
-* "()" is deleted from all colnames where it appears
-* "std" and "mean" are replaced with "Std" and "Mean", so that all colnames use CamelCase
+* "-" is deleted from all colnames where it appears;
+* "()" is deleted from all colnames where it appears;
+* "std" and "mean" are replaced with "Std" and "Mean", so that all colnames use CamelCase;
 * the "BodyBody" typo is replaced with "Body" where it appears.
 
 **The result of this step is that the extracted dataframe `ext.data.active` now has descriptive, easy to read variable names.**

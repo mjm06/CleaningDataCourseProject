@@ -1,5 +1,5 @@
 ###Codebook for `tidy_data.txt`
-####This markdown file describes the structure and variables of the file `tidy_data.txt`.
+####*describes the structure and variables of the file `tidy_data.txt`.*
 
 ####**File Structure**
 
@@ -30,7 +30,7 @@ Therefore, there are **180 rows** in the dataset:  30 subjects x 6 activities = 
 
 The remaining 79 variables are unitless, because they represent the mean or standard deviation of each variable, calculated by activity and subject, and the measurements of these variables were normalized to [-1,1] before the means and standard deviations were calculated. 
 
-**The following guidelines illustrate how to decipher the names of these 79 variables:**  
+**The following guidelines explain how to decipher the names of the remaining 79 variables in tidy_data.txt:**  
 
 * Variables beginning with a "t" are means or standard deviations of the variables that are time domain signals (captured at a constant rate of 50 Hz). 
 * Variables beginning with "f" are means or standard deviations of frequency domain signals.
